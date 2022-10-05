@@ -80,9 +80,9 @@ function validate() {
 
 
 	if(error>0){
-		checkoutForm.addEventListener('submit', event => {
-			event.preventDefault()
-		}, false)
+		checkoutForm.addEventListener('submit', e => {
+			e.preventDefault()
+		}, true)
 	}else{
 		alert("OK");
 	}
